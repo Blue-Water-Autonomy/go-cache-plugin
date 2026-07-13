@@ -1,4 +1,4 @@
-module github.com/tailscale/go-cache-plugin
+module github.com/Blue-Water-Autonomy/go-cache-plugin
 
 go 1.26.1
 

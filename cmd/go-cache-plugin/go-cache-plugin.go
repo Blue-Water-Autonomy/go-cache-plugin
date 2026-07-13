@@ -12,7 +12,7 @@ import (
 
 	"github.com/creachadair/command"
 	"github.com/creachadair/flax"
-	"github.com/tailscale/go-cache-plugin/lib/s3util"
+	"github.com/Blue-Water-Autonomy/go-cache-plugin/lib/s3util"
 )
 
 func main() {
