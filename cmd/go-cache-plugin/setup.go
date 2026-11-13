@@ -70,6 +70,7 @@ func initCacheServer(env *command.Env) (*gocache.Server, *s3util.Client, error) 
 	client := &s3util.Client{
 		Client: s3.NewFromConfig(cfg, func(o *s3.Options) {
 			o.UsePathStyle = flags.S3PathStyle
+			configureGCSSigning(flags.S3Endpoint, o)
 		}),
 		Bucket: flags.S3Bucket,
 	}
